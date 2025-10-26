@@ -1,0 +1,135 @@
+/* 🎂 Birthday Banner */
+.birthday-banner {
+  position: relative;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin: 40px 0;
+}
+
+.birthday-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  animation: bounce 1.5s infinite;
+}
+
+.birthday-content p {
+  font-size: 1.2rem;
+}
+
+/* ✨ Confetti using CSS only */
+.confetti span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: hsl(calc(var(--i) * 36), 100%, 70%);
+  top: -10px;
+  left: calc(var(--i) * 10%);
+  animation: fall 3s linear infinite;
+  border-radius: 2px;
+}
+
+.confetti span:nth-child(1) { --i: 1; }
+.confetti span:nth-child(2) { --i: 2; }
+.confetti span:nth-child(3) { --i: 3; }
+.confetti span:nth-child(4) { --i: 4; }
+.confetti span:nth-child(5) { --i: 5; }
+.confetti span:nth-child(6) { --i: 6; }
+.confetti span:nth-child(7) { --i: 7; }
+.confetti span:nth-child(8) { --i: 8; }
+.confetti span:nth-child(9) { --i: 9; }
+.confetti span:nth-child(10) { --i: 10; }
+
+@keyframes fall {
+  0% { transform: translateY(0) rotate(0); opacity: 1; }
+  100% { transform: translateY(400px) rotate(360deg); opacity: 0; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* 🌈 Birthday Banner */
+.birthday-banner {
+  position: relative;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #fff;
+  text-align: center;
+  padding: 70px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  overflow: hidden;
+  margin: 50px 0;
+}
+
+.birthday-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  animation: bounce 1.5s infinite;
+}
+
+.birthday-content p {
+  font-size: 1.2rem;
+}
+
+/* 🎊 Confetti */
+.confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Each confetti piece */
+.confetti span {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: -12px;
+  border-radius: 2px;
+  opacity: 0.9;
+  animation: fall 6s linear infinite;
+}
+
+/* Colorful confetti */
+.confetti span:nth-child(1)  { background: #ff595e; left: 10%; animation-delay: 0s; }
+.confetti span:nth-child(2)  { background: #ffca3a; left: 20%; animation-delay: 0.5s; }
+.confetti span:nth-child(3)  { background: #8ac926; left: 30%; animation-delay: 1s; }
+.confetti span:nth-child(4)  { background: #1982c4; left: 40%; animation-delay: 1.5s; }
+.confetti span:nth-child(5)  { background: #6a4c93; left: 50%; animation-delay: 2s; }
+.confetti span:nth-child(6)  { background: #ff9f1c; left: 60%; animation-delay: 2.5s; }
+.confetti span:nth-child(7)  { background: #2ec4b6; left: 70%; animation-delay: 3s; }
+.confetti span:nth-child(8)  { background: #e71d36; left: 80%; animation-delay: 3.5s; }
+.confetti span:nth-child(9)  { background: #9b5de5; left: 90%; animation-delay: 4s; }
+.confetti span:nth-child(10) { background: #00bbf9; left: 95%; animation-delay: 4.5s; }
+.confetti span:nth-child(11) { background: #ff006e; left: 15%; animation-delay: 5s; }
+.confetti span:nth-child(12) { background: #fb5607; left: 25%; animation-delay: 5.5s; }
+.confetti span:nth-child(13) { background: #8338ec; left: 65%; animation-delay: 6s; }
+.confetti span:nth-child(14) { background: #3a86ff; left: 75%; animation-delay: 6.5s; }
+.confetti span:nth-child(15) { background: #ffbe0b; left: 85%; animation-delay: 7s; }
+
+/* 🎈 Smooth falling animation */
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(600px) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* 🎵 Bouncy title animation */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
