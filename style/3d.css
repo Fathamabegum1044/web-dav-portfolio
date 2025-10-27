@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f36c21;
+  color: #fff;
+  
+}
+/* Navbar Section */
+header {
+  position: relative;
+  background-color: #fff;
+  width: 90%;
+  margin: 30px auto;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* small orange curve behind SIGNUP */
+header::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  width: 120px;
+  height: 40px;
+  background-color: #f36c21;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  z-index: -1;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 10;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f36c21;
+}
+
+.signup-btn {
+  background-color: #f36c21;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+header .btn-primary {
+  background-color: #f36c21;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.hero-content {
+  max-width: 100%;
+  color: #f36c21;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #f36c21;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.hero-image img {
+  width: 550px
+}
+/* Black Card Section */
+.black-card {
+  width: 30%;
+  margin:30px  auto; /* lift it up a little to overlap */
+  background-color: #000;
+  color: white;
+  border-radius: 20px;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.black-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.btn-light {
+  background-color: white;
+  color: #f36c21;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
